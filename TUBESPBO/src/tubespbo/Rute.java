@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication10;
+package tubespbo;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -12,9 +14,21 @@ package javaapplication10;
 public class Rute {
     private Stasiun stasiun1;
     private Stasiun stasiun2;
-    private Tiket[] daftarTiketDibeli = new Tiket[100];
+//    private Tiket[] daftarTiketDibeli = new Tiket[100];
+    private ArrayList<Tiket> daftarTiketDibeli;
     private int jmlTiket=0;
+    private Kereta kereta;
 
+    
+    public Rute(){};
+    
+    public Rute(Stasiun s1, Stasiun s2, Kereta k){
+        this.daftarTiketDibeli = new ArrayList();
+        this.stasiun1 = s1;
+        this.stasiun2 = s2;
+        this.kereta = k;
+    };
+    
     /**
      * @return the stasiun1
      */
@@ -43,11 +57,36 @@ public class Rute {
         this.stasiun2 = stasiun2;
     }
     
-    public createTiket(int tanggal){
-	if(jmlTiket<100){
-	daftarTiketDibeli[jmlTiket] = new Tiket(tanggal);
-	jmlTiket++;
-	}
+    
+//    public createTiket(int tanggal){
+//	if(jmlTiket<100){
+//	daftarTiketDibeli[jmlTiket] = new Tiket(tanggal);
+//	jmlTiket++;
+//	}
+//    }
+
+    public ArrayList<Tiket> getDaftarTiketDibeli() {
+        return daftarTiketDibeli;
+    }
+
+    public void setDaftarTiketDibeli(ArrayList<Tiket> daftarTiketDibeli) {
+        this.daftarTiketDibeli = daftarTiketDibeli;
+    }
+
+    public int getJmlTiket() {
+        return jmlTiket;
+    }
+
+    public void setJmlTiket(int jmlTiket) {
+        this.jmlTiket = jmlTiket;
+    }
+
+    public Kereta getKereta() {
+        return kereta;
+    }
+
+    public void setKereta(Kereta kereta) {
+        this.kereta = kereta;
     }
     
 }
