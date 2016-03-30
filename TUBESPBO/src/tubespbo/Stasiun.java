@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication10;
+package tubespbo;
 
 /**
  *
@@ -14,6 +14,13 @@ public class Stasiun {
   private int maxKereta;
   private int nKereta;
 
+  
+    public Stasiun(){}
+    
+    public Stasiun(String nama){
+        this.namaStasiun = nama;
+    }
+  
     /**
      * @return the namaStasiun
      */
