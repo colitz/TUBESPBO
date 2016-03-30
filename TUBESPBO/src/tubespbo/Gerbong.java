@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication10;
+package tubespbo;
 
 /**
  *
@@ -11,10 +11,17 @@ package javaapplication10;
  */
 public class Gerbong {
         private String namaGerbong;
-	private int bebanGerbong=0;
+	private int bebanGerbong;
 	private int maxBebanGerbong;
-	private Gerbong[] g; 
+//	private Gerbong[] g; 
 
+        
+        public Gerbong(String nama, int max){
+            this.namaGerbong = nama;
+            this.bebanGerbong = 0;
+            this.maxBebanGerbong = max;
+        }
+        
     /**
      * @return the namaGerbong
      */
@@ -28,7 +35,6 @@ public class Gerbong {
     public void setNamaGerbong(String namaGerbong) {
         this.namaGerbong = namaGerbong;
     }
-
     /**
      * @return the bebanGerbong
      */
@@ -60,17 +66,14 @@ public class Gerbong {
     /**
      * @return the k
      */
-    public Gerbong[] getG() {
-        return g;
-    }
-
-    /**
-     * @param k the k to set
-     */
-    public void setK(Gerbong[] g) {
-        this.g = g;
-    }
-        
-        
-        
+//    public Gerbong[] getG() {
+//        return g;
+//    }
+//
+//    /**
+//     * @param k the k to set
+//     */
+//    public void setK(Gerbong[] g) {
+//        this.g = g;
+//    }   
 }
