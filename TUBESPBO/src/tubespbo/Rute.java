@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * @author Lenovo
  */
 public class Rute {
+    private int idRute;
     private Stasiun stasiun1;
     private Stasiun stasiun2;
 //    private Tiket[] daftarTiketDibeli = new Tiket[100];
@@ -22,12 +23,23 @@ public class Rute {
     
     public Rute(){};
     
+    public Rute(int idRute){
+        this.idRute = idRute;
+    }
     public Rute(Stasiun s1, Stasiun s2, Kereta k){
         this.daftarTiketDibeli = new ArrayList();
         this.stasiun1 = s1;
         this.stasiun2 = s2;
         this.kereta = k;
     };
+
+    public void setIdRute(int idRute) {
+        this.idRute = idRute;
+    }
+
+    public int getIdRute() {
+        return idRute;
+    }
     
     /**
      * @return the stasiun1
