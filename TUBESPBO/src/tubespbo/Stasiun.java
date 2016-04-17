@@ -62,8 +62,5 @@ public class Stasiun {
     public void setnKereta(int nKereta) {
         this.nKereta = nKereta;
     }
-	
-  
-  
         
 }
